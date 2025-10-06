@@ -3,5 +3,5 @@ options {
 	forwarders {
 		8.8.8.8;
 		9.9.9.9;
-	};	
+	};
 };
