@@ -19,5 +19,5 @@ yoda	IN	A	192.168.20.24
 yoda	IN	A	192.168.20.25
 c3p0	IN	A	192.168.20.26
 palpatine	IN	CNAME	darthsidious
-c3p0	IN	MX 10	c3p0.starwars.lan.
+c3p0	IN	MX	10	c3p0.starwars.lan.
 lenda	IN	TXT	"Que a forza te acompanhe"
