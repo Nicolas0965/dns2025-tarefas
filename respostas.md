@@ -69,7 +69,6 @@ $TTL	604800
 @	IN	NS	darthvader.starwars.lan.
 @	IN	NS	darthsidious.starwars.lan.
 
-@	IN	A	192.168.20.200
 darthvader	IN	A	192.168.20.10
 skywalker	IN	A	192.168.20.101
 skywalker	IN	A	192.168.20.111
@@ -145,8 +144,7 @@ Address: 192.168.20.101
 Server:		localhost
 Address:	127.0.0.1#53
 
-Name:	starwars.lan
-Address: 192.168.20.200
+*** Can't find starwars.lan: No answer
 
 *nslookup -q=mx starwars.lan localhost*
 Server:		localhost
