@@ -1,8 +1,0 @@
-zone "starwars.lan" {
-	type master;
-	file "/etc/bind/db.starwars.lan";
-};
-zone "20.168.192.in-addr.arpa" {
-    type master;
-    file "/etc/bind/db.192.168.20";
-};

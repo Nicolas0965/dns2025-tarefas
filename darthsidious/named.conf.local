@@ -1,0 +1,17 @@
+key "llave-secreta" {
+	algorithm hmac-sha256;
+	secret "Yt2EqhyrQA1mMy7Uf/QRoa/Ljvg/W47rpsZZt8dz0VM=";
+};
+server 192.168.20.10 {
+    keys { "llave-secreta"; };
+};
+zone "starwars.lan" {
+	type slave;
+	file "/etc/bind/db.starwars.lan";
+    masters { 192.168.20.10;};
+};
+zone "20.168.192.in-addr.arpa" {
+    type slave;
+    file "/etc/bind/db.192.168.20";
+    masters { 192.168.20.10;};
+};
