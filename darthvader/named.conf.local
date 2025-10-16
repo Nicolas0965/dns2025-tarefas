@@ -12,3 +12,8 @@ zone "20.168.192.in-addr.arpa" {
     file "/etc/bind/db.192.168.20";
     allow-transfer { key "llave-secreta"; };
 };
+zone "academia.jedi" {
+	type slave;
+	file "/etc/bind/db.academia.jedi";
+    masters { 192.168.20.101;};
+};
