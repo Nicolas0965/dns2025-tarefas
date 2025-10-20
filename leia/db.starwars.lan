@@ -26,7 +26,3 @@ lenda	IN	TXT	"Que a forza te acompanhe"
 $ORIGIN antigarepublica.starwars.lan.
 xendor	IN	A	192.168.20.222
 ardenlyn	IN	A	192.168.20.223
-
-$ORIGIN imperio.starwars.lan.
-@	IN	NS	leia
-leia	IN	A	192.168.20.106

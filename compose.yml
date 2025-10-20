@@ -23,6 +23,20 @@ services:
     networks:
       rededns:
         ipv4_address: 192.168.20.11
+  leia:
+    build: dnsserver
+    hostname: leia
+    # ports:
+    #   - 10.26.0.8:54:53    #So na rede principal
+    volumes:
+      - ./leia/named.conf.options:/etc/bind/named.conf.options
+      - ./leia/named.conf.local:/etc/bind/named.conf.local
+      - ./leia/db.192.168.20:/etc/bind/db.192.168.20
+      - ./leia/db.starwars.lan:/etc/bind/db.starwars.lan
+    networks:
+      rededns:
+        ipv4_address: 192.168.20.106
+  
   cliente:
     build: cliente
     hostname: cliente1
