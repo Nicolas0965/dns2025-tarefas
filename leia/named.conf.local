@@ -1,19 +1,8 @@
-key "llave-secreta" {
-	algorithm hmac-sha256;
-	secret "Yt2EqhyrQA1mMy7Uf/QRoa/Ljvg/W47rpsZZt8dz0VM=";
-};
-zone "starwars.lan" {
+zone "imperio.starwars.lan" {
 	type master;
-	file "/etc/bind/db.starwars.lan";
-    allow-transfer { key "llave-secreta"; };
+	file "/etc/bind/db.imperio.starwars.lan";
 };
 zone "20.168.192.in-addr.arpa" {
     type master;
     file "/etc/bind/db.192.168.20";
-    allow-transfer { key "llave-secreta"; };
-};
-zone "academia.jedi" {
-	type slave;
-	file "/etc/bind/db.academia.jedi";
-    masters { 192.168.20.101;};
 };
